@@ -1,0 +1,69 @@
+% Die Titelseite
+% Im folgenden kommen ein paar Variablen, die auszufüllen sind
+% Bisher steht dort nur Musterinhalt
+% Außerdem müssen zei Dateien erstellt werden, Bild/Logo/Emblem des Fachgebietes
+% sowie der Universität
+
+\newcommand{\trtitle}{Titel}
+\newcommand{\trtype}{Diplomarbeit}
+\newcommand{\trauthor}{Max Mustermann}
+\newcommand{\trstrasse}{Musterstraße 666}
+\newcommand{\trmatrikelnummer}{0815}
+\newcommand{\trort}{007 Musterstadt}
+\newcommand{\trbetreuer}{Dipl. Ing. Peter Wunderlich}
+\newcommand{\trprof}{Prof. Dr. Udo Seltsam}
+\newcommand{\trfachgebiet}{Erste Sahne}
+\newcommand{\trinstitut}{gute Wissenschaft}
+\newcommand{\trfakultaet}{IV Wissenschaft}
+\newcommand{\truni}{Universität Musterstadt}
+\newcommand{\trdate}{\today}
+
+\thispagestyle{empty}
+
+% Kopfzeile mit Logos.
+% Eventuell die \hspace{} je nach Logogröße anpassen
+\begin{tabular}{lcr}
+  \includegraphics[scale=0.8]{dein_unilogo} & % dein_unilogo.jpg/.eps im Verzeichnis "bilder" ablegen
+  \hspace{2cm} \truni \hspace{2cm} &
+  \includegraphics[scale=0.8]{dein_fglogo} % dein_fglogo.jpg/.eps im Verzeichnis "bilder" ablegen, Fachgebietslogo
+  \\
+\end{tabular}
+
+\rule{\textwidth}{0.4pt}
+
+\vspace{2.5cm}
+\begin{center}
+  \textbf{\LARGE \trtitle}
+\end{center}
+\vspace{2cm}
+
+\begin{center}
+  \textbf{\trtype} \\
+  am Fachgebiet \trfachgebiet \\
+  \trprof \\
+  Institut für \trinstitut \\
+  Fakultät \trfakultaet \\
+  \truni \\[0.5cm]
+  vorgelegt von \\
+  \textbf{\trauthor}
+\end{center}
+
+\vspace{1cm}
+
+
+\begin{center}
+\begin{tabular}{ll}
+Betreuer: & \trbetreuer \\
+\end{tabular}
+\end{center}
+
+\vfill
+
+\begin{tabular}{l}
+\trauthor \\
+Matrikelnummer:  \trmatrikelnummer \\
+\trstrasse \\
+\trort
+\end{tabular}
+
+\rule{\textwidth}{0.4pt}

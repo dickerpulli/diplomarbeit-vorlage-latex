@@ -1,0 +1,52 @@
+% Header mit Deklarationen
+\input{extras/header}
+
+\begin{document}
+
+% Römische Nummerierung für Sonderseiten, wie Verzeichnisse und Anhang
+\pagenumbering{Roman}
+
+% Titelblatt
+\input{extras/titelseite}
+
+% Verzeichnisse
+% Kopfzeile links Kapitel, rechts leer
+\ihead{\leftmark}
+\ohead{}
+\input{extras/verzeichnisse}
+
+% Merke mir die römische Seitenzahl in 'roemisch' und setzte Nummeriernung 
+% auf arabisch für die eigentlichen Kapitel
+\newpage
+\newcounter{roemisch}
+\setcounter{roemisch}{\value{page}}
+\pagenumbering{arabic}
+
+% Die einzelnen Kapitel
+% Kopfzeile: links Kapitel, rechts Sektion
+%\ihead{\leftmark}
+%\ohead{\rightmark}
+\ihead{\parbox[t][2\baselineskip][t]{\dimexpr\linewidth-2em\relax}{\leftmark}}
+\ohead{\parbox[t][2\baselineskip][t]{20em}{\raggedleft\rightmark}}
+\input{kapitel/kapitel1}
+\input{kapitel/kapitel2}
+\input{kapitel/kapitel3}
+\input{kapitel/kapitel4}
+
+% Setze Numerierung wieder auf römisch zurück und setzte von oben fort
+% Wert ist demnach der von 'roemisch'
+\newpage
+\pagenumbering{Roman}
+\setcounter{page}{\value{roemisch}}
+
+% Literaturverzeichnis
+\bibliography{literatur/bib}
+
+% Appendix, falls vorhanden
+\appendix
+\input{extras/anhang}
+
+% Eidesstattliche Erklärung
+\input{extras/eidesstattliche}
+
+\end{document}
