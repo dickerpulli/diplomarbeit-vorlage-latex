@@ -17,11 +17,11 @@ Dies ist eine Vorlage für die Erstellung einer Diplomarbeit mit dem Textsystem 
   |
   --diplom.tex	-> Die Hauptdatei
 </pre>
-*extras/header.tex* enthält sämtliche Formatierungen enthalten, diese können dort nach Belieben verändert werden.
+*extras/header.tex* enthält sämtliche Formatierungen. Diese können dort nach Belieben verändert werden.
 
 *extras/titelseite.tex* beschreibt die Titelseite. Auch hier sind Variablen, die mit individuellen Einträgen versehen werden müssen.
 
-*diplom.tex* fasst alle einzelnen Dateinen zusammen und bildet das Hauptdokument
+*diplom.tex* fasst alle einzelnen Dateien zusammen und bildet das Hauptdokument.
 
 Der Rest spricht hoffentlich für sich.
 
