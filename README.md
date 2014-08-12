@@ -27,15 +27,15 @@ Der Rest spricht hoffentlich für sich.
 
 ###Um nun die Arbeit zu erstellen, folgendes ausführen
 
-1. $ latex diplom.tex -output-format=pdf 
+1. $ pdflatex diplom.tex -output-format=pdf 
 	* Erste Erstellung von Verzeichnissen und Dateien mit Verweisen, vor allem die "diplom.aux" Datei 
 2. $ bibtex diplom.aux		
 	* Erstellen des Literaturverzeichnisses
 3. $ makeindex diplom.nlo -s nomencl.ist -o diplom.nls 
 	* Erstellen des Abkürzungsverzeichnisses
-4. $ latex diplom.tex -output-format=pdf		
+4. $ pdflatex diplom.tex -output-format=pdf		
 	* Erstellen des Inhaltsverzeichnisses
-5. $ latex diplom.tex -output-format=pdf
+5. $ pdflatex diplom.tex -output-format=pdf
 	* Einbinden des Inhaltsverzeichnisses
 
 **NEU:** Einfach die build.sh ausführen, wenn eine unix-shell vorhanden ist.
