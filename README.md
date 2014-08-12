@@ -38,7 +38,8 @@ Der Rest spricht hoffentlich für sich.
 5. $ latex diplom.tex -output-format=pdf
 	* Einbinden des Inhaltsverzeichnisses
 
-**NEU:** Einfach die build.sh ausführen, wenn eine unix-shell vorhanden ist.
+*NEU*
+Einfach die build.sh ausführen, wenn eine unix-shell vorhanden ist.
 
 Nun kann man sich die Datei "diplom.pdf" mit einem Viewer seiner Wahl anschauen.
 
