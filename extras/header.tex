@@ -33,7 +33,7 @@
 %
 % Paket für Quotes
 %
-\usepackage[babel,german=true]{csquotes}
+\usepackage[babel,german=quotes]{csquotes}
 
 %
 % Paket zum Erweitern der Tabelleneigenschaften
@@ -160,11 +160,6 @@
 \bibliographystyle{plain}
 
 %
-% Anführungsstriche mithilfe von \textquote{-anzuführendes-}
-%
-\newcommand{\textquote}[1]{"`#1"'}
-
-%
 % Strukturiertiefe bis subsubsection{} möglich
 %
 \setcounter{secnumdepth}{3}
@@ -183,7 +178,7 @@
 % Abkürzungsverzeichnis
 %
 \usepackage{nomencl}
-% Befehl für das Erzeugen von Abkürzungen umbenennen in '\abbrev'
+% Befehl für das Erzeugen von Abkürzungen umbenennen in \abbrev
 \let\abbrev\nomenclature
 % Deutsche Überschrift
 \renewcommand{\nomname}{Abkürzungsverzeichnis}
