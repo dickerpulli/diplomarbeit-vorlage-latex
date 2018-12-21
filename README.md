@@ -3,9 +3,7 @@ diplomarbeit-vorlage-latex
 
 Vorlage zur Erstellung von Diplom-/Master-/Bachelor-Arbeiten mit dem Textsatzsystem LaTeX
 
-Dies ist eine Vorlage für die Erstellung einer Diplomarbeit mit dem Textsystem LaTeX
-
-###Struktur
+### Struktur
 <pre>
 ----bilder/	-> Verzeichnis, indem die Bilder liegen, die mit \includegraphics eingebunden werden können
   |
@@ -25,7 +23,7 @@ Dies ist eine Vorlage für die Erstellung einer Diplomarbeit mit dem Textsystem 
 
 Der Rest spricht hoffentlich für sich.
 
-###Um nun die Arbeit zu erstellen, folgendes ausführen
+### Um nun die Arbeit zu erstellen, folgendes ausführen
 
 1. $ pdflatex diplom.tex -output-format=pdf 
 	* Erste Erstellung von Verzeichnissen und Dateien mit Verweisen, vor allem die "diplom.aux" Datei 
