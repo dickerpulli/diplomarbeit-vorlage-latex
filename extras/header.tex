@@ -178,16 +178,16 @@
 % Abkürzungsverzeichnis
 %
 \usepackage[intoc]{nomencl}
-% Befehl für das Erzeugen von Abkürzungen umbenennen in \abbrev
-\let\abbrev\nomenclature
+\usepackage[toc]{glossaries}
 % Deutsche Überschrift
-\renewcommand{\nomname}{Abkürzungsverzeichnis}
+\printglossary[title=Abkürzungsverzeichnis]
+%\renewcommand{\nomname}{Abkürzungsverzeichnis}
 % Punkte zw. Abkürzung und Erklärung
-\setlength{\nomlabelwidth}{.20\hsize}
-\renewcommand{\nomlabel}[1]{#1 \dotfill}
+%\setlength{\nomlabelwidth}{.20\hsize}
+%\renewcommand{\nomlabel}[1]{#1 \dotfill}
 % Zeilenabstände verkleinern
-\setlength{\nomitemsep}{-\parsep}
-\makenomenclature
+%\setlength{\nomitemsep}{-\parsep}
+%\makenomenclature
 
 %
 % Kapitel-Überschriften werden in eine Zeile geschrieben.
