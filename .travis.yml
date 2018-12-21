@@ -5,11 +5,13 @@ addons:
      - texlive
      - texlive-lang-german
      - texlive-latex-extra
-script: bash build.sh
+script: 
+ - bash build.sh
+ - export TRAVIS_TAG=1.0
 deploy:
   provider: releases
   api_key: $GITHUB_OAUTH_TOKEN
   file: diplom.pdf
   skip_cleanup: true
   on:
-    tags: true
+    tags: false
