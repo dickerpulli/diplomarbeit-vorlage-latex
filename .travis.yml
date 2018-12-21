@@ -1,2 +1,5 @@
 language: minimal
+before_script: 
+  - apt update
+  - apt install -y texlive texlive-lang-german texlive-latex-extra 
 script: bash build.sh
