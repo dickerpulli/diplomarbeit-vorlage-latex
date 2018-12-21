@@ -66,7 +66,7 @@
 %
 % Kopf und Fußzeilen
 %
-\usepackage{scrlayer-scrpage}
+\usepackage[autooneside]{scrlayer-scrpage}
 \pagestyle{scrheadings}
 % Inhalt bis Section rechts und Chapter links
 \automark[section]{chapter}
@@ -181,14 +181,7 @@
 \usepackage[intoc]{nomencl}
 \usepackage[toc]{glossaries}
 \makeglossaries
-% Deutsche Überschrift
-%\renewcommand{\nomname}{Abkürzungsverzeichnis}
-% Punkte zw. Abkürzung und Erklärung
-%\setlength{\nomlabelwidth}{.20\hsize}
-%\renewcommand{\nomlabel}[1]{#1 \dotfill}
-% Zeilenabstände verkleinern
-%\setlength{\nomitemsep}{-\parsep}
-%\makenomenclature
+\renewcommand*\glspostdescription{\dotfill}
 
 %
 % Kapitel-Überschriften werden in eine Zeile geschrieben.
@@ -203,4 +196,3 @@
 %\usepackage{titlesec}
 %\titleformat{\chapter}[hang] 
 %{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter:}{1em}{} 
-
