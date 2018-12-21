@@ -4,15 +4,15 @@ whereis pdflatex | grep / | wc -l
 whereis noknown | grep / | wc -l
 
 #Prüfe das Vorhandensein der notwendigen Programme
-if [ `whereis pdflatex | grep / | wc -l` > 0 ]; then
+if [ `whereis pdflatex | grep / | wc -l` -gt 0 ]; then
     echo "pdflatex wurde nicht gefunden"
     exit 1
 fi
-if [ `whereis bibtex | grep / | wc -l` > 0 ]; then
+if [ `whereis bibtex | grep / | wc -l` -gt 0 ]; then
     echo "bibtex wurde nicht gefunden"
     exit 1
 fi
-if [ `whereis makeindex | grep / | wc -l` > 0 ]; then
+if [ `whereis makeindex | grep / | wc -l` -gt 0 ]; then
     echo "makeindex wurde nicht gefunden"
     exit 1
 fi
