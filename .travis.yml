@@ -12,3 +12,4 @@ deploy:
   api_key: $GITHUB_OAUTH_TOKEN
   file: diplom.pdf
   skip_cleanup: true
+  override: true
