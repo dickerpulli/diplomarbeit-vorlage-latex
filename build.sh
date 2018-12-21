@@ -1,5 +1,8 @@
 #!/bin/bash
 
+whereis pdflatex | grep / | wc -l
+whereis noknown | grep / | wc -l
+
 #Prüfe das Vorhandensein der notwendigen Programme
 if [ `whereis pdflatex | grep / | wc -l` > 0 ]; then
     echo "pdflatex wurde nicht gefunden"
