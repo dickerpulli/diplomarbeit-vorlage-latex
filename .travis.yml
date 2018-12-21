@@ -1,5 +1,8 @@
 language: minimal
-before_script: 
-  - sudo apt update
-  - sudo apt install -y texlive texlive-lang-german texlive-latex-extra 
+addons:
+  apt:
+    packages:
+     - texlive
+     - texlive-lang-german
+     - texlive-latex-extra
 script: bash build.sh
