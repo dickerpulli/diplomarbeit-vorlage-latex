@@ -40,5 +40,9 @@ Der Rest spricht hoffentlich für sich.
 
 Nun kann man sich die Datei "diplom.pdf" mit einem Viewer seiner Wahl anschauen.
 
+### Beispiel
+
+Hier könnt ihr auch ein Beispiel ansehen: [![Titelblatt](titelblatt.png)](https://github.com/dickerpulli/diplomarbeit-vorlage-latex/releases/download/1.0.0/diplom.pdf)
+
 
 Viel Spaß! 
