@@ -21,7 +21,7 @@ pdflatex diplom.tex -output-format=pdf
 bibtex diplom.aux		
 
 #Erstellen des Abkürzungsverzeichnisses
-makeindex diplom.nlo -s nomencl.ist -o diplom.nls 
+makeglossaries diplom
 
 #Erstellen des Inhaltsverzeichnisses
 pdflatex diplom.tex -output-format=pdf		
