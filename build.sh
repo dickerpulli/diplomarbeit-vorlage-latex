@@ -1,15 +1,15 @@
 #!/bin/bash
 
 #Prüfe das Vorhandensein der notwendigen Programme
-if [ -h `whereis pdflatex | grep /` ]; then
+if [ `whereis pdflatex | grep / | wc -l` > 0 ]; then
     echo "pdflatex wurde nicht gefunden"
     exit 1
 fi
-if [ -h `whereis bibtex | grep /` ]; then
+if [ `whereis bibtex | grep / | wc -l` > 0 ]; then
     echo "bibtex wurde nicht gefunden"
     exit 1
 fi
-if [ -h `whereis makeindex | grep /` ]; then
+if [ `whereis makeindex | grep / | wc -l` > 0 ]; then
     echo "makeindex wurde nicht gefunden"
     exit 1
 fi
