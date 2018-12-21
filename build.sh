@@ -3,7 +3,7 @@
 #Prüfe das Vorhandensein der notwendigen Programme
 PDFLATEX=`whereis pdflatex | grep / | wc -l`
 if ((PDFLATEX > 0)); then
-    echo "pdflatex wurde nicht gefunden"
+    echo "pdflatex wurde nicht gefunden $PDFLATEX"
     exit 1
 fi
 if ((`whereis bibtex | grep / | wc -l` > 0)); then
