@@ -2,38 +2,38 @@
 	pdftex,%              PDFTex verwenden
 	a4paper,%             A4 Papier
 	oneside,%             Einseitig
-	bibtotoc,%    		Literaturverzeichnis einfügen bibtotocnumbered: nummeriert
-	liststotoc,%		Verzeichnisse einbinden in toc
-	idxtotoc,%            Index ins Verzeichnis einfügen
-	halfparskip,%        Europäischer Satz mit abstand zwischen Absätzen
+	bibtotoc,%    	      Literaturverzeichnis einfÃ¼gen bibtotocnumbered: nummeriert
+	liststotoc,%	      Verzeichnisse einbinden in toc
+	idxtotoc,%            Index ins Verzeichnis einfÃ¼gen
+	halfparskip,%         EuropÃ¤ischer Satz mit abstand zwischen AbsÃ¤tzen
 	chapterprefix,%       Kapitel anschreiben als Kapitel
 	headsepline,%         Linie nach Kopfzeile
-	%footsepline,%         Linie vor Fusszeile
-	%pointlessnumbers,%     Nummern ohne abschließenden Punkt
-	12pt%                 Grössere Schrift, besser lesbar am bildschrim
+	%footsepline,%        Linie vor Fusszeile
+	%pointlessnumbers,%   Nummern ohne abschlieÃŸenden Punkt
+	12pt%                 GrÃ¶ssere Schrift, besser lesbar am bildschrim
 ]{scrbook}
 
 %
-% Randabstände einstellen
+% RandabstÃ¤nde einstellen
 %
 \usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
 
 %
-% Paket für Übersetzungen ins Deutsche
+% Paket fÃ¼r Ãœbersetzungen ins Deutsche
 %
-\usepackage[french,ngerman]{babel}
+\usepackage[ngerman]{babel}
 
 %
-% Pakete um Latin1 Zeichnensätze verwenden zu können und die dazu
+% Pakete um Latin1 ZeichnensÃ¤tze verwenden zu kÃ¶nnen und die dazu
 % passenden Schriften.
 %
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
 
 %
-% Paket für Quotes
+% Paket fÃ¼r Quotes
 %
-\usepackage[babel,french=guillemets,german=swiss]{csquotes}
+\usepackage[babel,german=quotes]{csquotes}
 
 %
 % Paket zum Erweitern der Tabelleneigenschaften
@@ -41,12 +41,12 @@
 \usepackage{array}
 
 %
-% Paket für schönere Tabellen
+% Paket fÃ¼r schÃ¶nere Tabellen
 %
 \usepackage{booktabs}
 
 %
-% Paket um Grafiken einbetten zu können
+% Paket um Grafiken einbetten zu kÃ¶nnen
 %
 \usepackage{graphicx}
 
@@ -64,7 +64,7 @@
 \setcapindent{1em}
 
 %
-% Kopf und Fußzeilen
+% Kopf und FuÃŸzeilen
 %
 \usepackage{scrpage2}
 \pagestyle{scrheadings}
@@ -80,24 +80,24 @@
 \usepackage{amssymb}
 
 %
-% Type 1 Fonts für bessere darstellung in PDF verwenden.
+% Type 1 Fonts fÃ¼r bessere darstellung in PDF verwenden.
 %
 %\usepackage{mathptmx}           % Times + passende Mathefonts
 %\usepackage[scaled=.92]{helvet} % skalierte Helvetica als \sfdefault
 \usepackage{courier}            % Courier als \ttdefault
 
 %
-% Paket um Textteile drehen zu können
+% Paket um Textteile drehen zu kÃ¶nnen
 %
 \usepackage{rotating}
 
 %
-% Paket für Farben im PDF
+% Paket fÃ¼r Farben im PDF
 %
 \usepackage{color}
 
 %
-% Paket für Links innerhalb des PDF Dokuments
+% Paket fÃ¼r Links innerhalb des PDF Dokuments
 %
 \definecolor{LinkColor}{rgb}{0,0,0.5}
 \usepackage[%
@@ -121,7 +121,7 @@
 \lstloadlanguages{TeX}
 
 %
-% Listing Definationen für PHP Code
+% Listing Definitionen fÃ¼r LaTeX Code
 %
 \definecolor{lbcolor}{rgb}{0.85,0.85,0.85}
 \lstset{language=[LaTeX]TeX,
@@ -150,7 +150,7 @@
 	{\end{list}}
 
 %
-% aller Bilder werden im Unterverzeichnis figures gesucht:
+% aller Bilder werden im Unterverzeichnis 'bilder' gesucht:
 %
 \graphicspath{{bilder/}}
 
@@ -160,12 +160,12 @@
 \bibliographystyle{plain}
 
 %
-% Anführungsstriche mithilfe von \textss{-anzufuehrendes-}
+% AnfÃ¼hrungsstriche mithilfe von \textss{-anzufuehrendes-}
 %
 \newcommand{\textss}[1]{"`#1"'}
 
 %
-% Strukturiertiefe bis subsubsection{} möglich
+% Strukturiertiefe bis subsubsection{} mÃ¶glich
 %
 \setcounter{secnumdepth}{3}
 
@@ -175,28 +175,28 @@
 \setcounter{tocdepth}{3}
 
 %
-% Zeilenabstand wird um den Faktor 1.5 verändert
+% Zeilenabstand wird um den Faktor 1.5 verÃ¤ndert
 %
 %\renewcommand{\baselinestretch}{1.5}
 
 %
-% Abkürzungsverzeichnis
+% AbkÃ¼rzungsverzeichnis
 %
 \usepackage{nomencl}
-% Befehl umbenennen in abk
+% Befehl fÃ¼r das Erzeugen von AbkÃ¼rzungen umbenennen in '\abk'
 \let\abk\nomenclature
-% Deutsche Überschrift
-\renewcommand{\nomname}{Abkürzungsverzeichnis}
-% Punkte zw. Abkürzung und Erklärung
+% Deutsche Ãœberschrift
+\renewcommand{\nomname}{AbkÃ¼rzungsverzeichnis}
+% Punkte zw. AbkÃ¼rzung und ErklÃ¤rung
 \setlength{\nomlabelwidth}{.20\hsize}
 \renewcommand{\nomlabel}[1]{#1 \dotfill}
-% Zeilenabstände verkleinern
+% ZeilenabstÃ¤nde verkleinern
 \setlength{\nomitemsep}{-\parsep}
 \makenomenclature
 
 
 %
-% Kapitel-Überschriften werden in eine Zeile geschrieben.
+% Kapitel-Ãœberschriften werden in eine Zeile geschrieben.
 %
 % normal: 
 % Kapitel 1.
