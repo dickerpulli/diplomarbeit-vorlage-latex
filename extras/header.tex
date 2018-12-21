@@ -66,7 +66,7 @@
 %
 % Kopf und Fußzeilen
 %
-\usepackage{scrpage2}
+\usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 % Inhalt bis Section rechts und Chapter links
 \automark[section]{chapter}
@@ -83,8 +83,9 @@
 % Type 1 Fonts für bessere Darstellung in PDF verwenden.
 %
 %\usepackage{mathptmx}           % Times + passende Mathefonts
-%\usepackage[scaled=.92]{helvet} % skalierte Helvetica als \sfdefault
-\usepackage{courier}            % Courier als \ttdefault
+\usepackage{helvet}              % Helvetica als \sfdefault
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{courier}             % Courier als \ttdefault
 
 %
 % Paket um Textteile drehen zu können
