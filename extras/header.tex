@@ -66,10 +66,12 @@
 %
 % Kopf und Fußzeilen
 %
-\usepackage[autooneside,automark]{scrlayer-scrpage}
+\usepackage[automark]{scrlayer-scrpage}
 \pagestyle{scrheadings}
 % Inhalt bis Section rechts und Chapter links
-%\automark[section]{chapter}
+\automark[section]{chapter}
+\ohead{\leftmark}
+\ihead{\rightmark}
 % Mitte: leer
 \chead{}
 
