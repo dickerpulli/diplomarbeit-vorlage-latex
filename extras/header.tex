@@ -33,7 +33,7 @@
 %
 % Paket für Quotes
 %
-\usepackage[babel,german=swiss]{csquotes}
+\usepackage[babel,german=true]{csquotes}
 
 %
 % Paket zum Erweitern der Tabelleneigenschaften
@@ -59,7 +59,7 @@
 \setkomafont{descriptionlabel}{\normalfont\bfseries}
 
 %
-% Zeilenumbruch bei Bildbeschreibungen.
+% Zeilenumbruch bei Bildbeschreibungen
 %
 \setcapindent{1em}
 
@@ -74,13 +74,13 @@
 \chead{}
 
 %
-% mathematische symbole aus dem AMS Paket.
+% Mathematische Symbole aus dem AMS Paket.
 %
 \usepackage{amsmath}
 \usepackage{amssymb}
 
 %
-% Type 1 Fonts für bessere darstellung in PDF verwenden.
+% Type 1 Fonts für bessere Darstellung in PDF verwenden.
 %
 %\usepackage{mathptmx}           % Times + passende Mathefonts
 %\usepackage[scaled=.92]{helvet} % skalierte Helvetica als \sfdefault
@@ -101,21 +101,21 @@
 %
 \definecolor{LinkColor}{rgb}{0,0,0.5}
 \usepackage[%
-	pdftitle={Titel},% Titel der Diplomarbeit
-	pdfauthor={Autor},% Autor(en)
-	pdfcreator={LaTeX, LaTeX with hyperref and KOMA-Script},% Genutzte Programme
-	pdfsubject={Betreff}, % Betreff
-	pdfkeywords={Keywords}]{hyperref} % Keywords halt :-)
-\hypersetup{colorlinks=true,% Definition der Links im PDF File
-	linkcolor=LinkColor,%
-	citecolor=LinkColor,%
-	filecolor=LinkColor,%
-	menucolor=LinkColor,%
-	pagecolor=LinkColor,%
-	urlcolor=LinkColor}
+	pdftitle={Titel},                                         % Titel der Diplomarbeit
+	pdfauthor={Autor},                                        % Autor(en)
+	pdfcreator={LaTeX, LaTeX with hyperref and KOMA-Script} , % Genutzte Programme
+	pdfsubject={Betreff},                                     % Betreff
+	pdfkeywords={Keywords}]{hyperref}                         % Keywords halt :-)
+\hypersetup{colorlinks=true,                                      % Definition der Links im PDF File
+	linkcolor=LinkColor,                                      % Alle Links haben die gleiche oben definierte Farbe
+	citecolor=LinkColor,                                      % s.o.
+	filecolor=LinkColor,                                      % s.o.
+	menucolor=LinkColor,                                      % s.o.
+	pagecolor=LinkColor,                                      % s.o.
+	urlcolor=LinkColor}                                       % s.o.
 
 %
-% Paket um LIstings sauber zu formatieren.
+% Paket um Listings sauber zu formatieren
 %
 \usepackage[savemem]{listings}
 \lstloadlanguages{TeX}
@@ -150,7 +150,7 @@
 	{\end{list}}
 
 %
-% aller Bilder werden im Unterverzeichnis 'bilder' gesucht:
+% aller Bilder werden im Unterverzeichnis 'bilder' gesucht
 %
 \graphicspath{{bilder/}}
 
@@ -160,9 +160,9 @@
 \bibliographystyle{plain}
 
 %
-% Anführungsstriche mithilfe von \textss{-anzufuehrendes-}
+% Anführungsstriche mithilfe von \textquote{-anzuführendes-}
 %
-\newcommand{\textss}[1]{"`#1"'}
+\newcommand{\textquote}[1]{"`#1"'}
 
 %
 % Strukturiertiefe bis subsubsection{} möglich
@@ -183,8 +183,8 @@
 % Abkürzungsverzeichnis
 %
 \usepackage{nomencl}
-% Befehl für das Erzeugen von Abkürzungen umbenennen in '\abk'
-\let\abk\nomenclature
+% Befehl für das Erzeugen von Abkürzungen umbenennen in '\abbrev'
+\let\abbrev\nomenclature
 % Deutsche Überschrift
 \renewcommand{\nomname}{Abkürzungsverzeichnis}
 % Punkte zw. Abkürzung und Erklärung
@@ -193,7 +193,6 @@
 % Zeilenabstände verkleinern
 \setlength{\nomitemsep}{-\parsep}
 \makenomenclature
-
 
 %
 % Kapitel-Überschriften werden in eine Zeile geschrieben.
