@@ -1,16 +1,15 @@
 #!/bin/bash
 
 #Prüfe das Vorhandensein der notwendigen Programme
-PDFLATEX=`whereis pdflatex | grep / | wc -l`
-if [ $PDFLATEX -gt 0 ]; then
-    echo "pdflatex wurde nicht gefunden $PDFLATEX"
+if [ `whereis pdflatex | grep / | wc -l` -eq 0 ]; then
+    echo "pdflatex wurde nicht gefunden"
     exit 1
 fi
-if ((`whereis bibtex | grep / | wc -l` > 0)); then
+if [ `whereis bibtex | grep / | wc -l` -eq 0 ]; then
     echo "bibtex wurde nicht gefunden"
     exit 1
 fi
-if ((`whereis makeindex | grep / | wc -l` > 0)); then
+if [ `whereis makeindex | grep / | wc -l` -eq 0 ]; then
     echo "makeindex wurde nicht gefunden"
     exit 1
 fi
