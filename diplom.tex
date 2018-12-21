@@ -3,7 +3,7 @@
 
 \begin{document}
 
-% Römische Nummerierung für Sonderseiten, wie Verzeichnisse und Anhang
+% RÃ¶mische Nummerierung fÃ¼r Sonderseiten, wie Verzeichnisse und Anhang
 \pagenumbering{Roman}
 
 % Titelblatt
@@ -15,8 +15,8 @@
 \ohead{}
 \input{extras/verzeichnisse}
 
-% Merke mir die römische Seitenzahl in 'roemisch' und setzte Nummeriernung 
-% auf arabisch für die eigentlichen Kapitel
+% Merke mir die rÃ¶mische Seitenzahl in 'roemisch' und setzte Nummeriernung 
+% auf arabisch fÃ¼r die eigentlichen Kapitel
 \newpage
 \newcounter{roemisch}
 \setcounter{roemisch}{\value{page}}
@@ -33,7 +33,7 @@
 \input{kapitel/kapitel3}
 \input{kapitel/kapitel4}
 
-% Setze Numerierung wieder auf römisch zurück und setzte von oben fort
+% Setze Numerierung wieder auf rÃ¶misch zurÃ¼ck und setzte von oben fort
 % Wert ist demnach der von 'roemisch'
 \newpage
 \pagenumbering{Roman}
@@ -42,11 +42,11 @@
 % Literaturverzeichnis
 \bibliography{literatur/bib}
 
-% Appendix, falls vorhanden
+% AnhÃ¤nge, falls vorhanden
 \appendix
 \input{extras/anhang}
 
-% Eidesstattliche Erklärung
+% Eidesstattliche ErklÃ¤rung
 \input{extras/eidesstattliche}
 
 \end{document}
